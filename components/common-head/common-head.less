@@ -1,0 +1,81 @@
+.common-head-main-div {
+    width: 100%;
+    text-align: center;
+
+    // position: fixed;
+    // top: 0;
+    .navbar-brand {
+        display: flex;
+        align-items: flex-end;
+        .common-head-logo {
+            height: 94px;
+            margin: 12px 0 4px 0;
+            // margin: auto;
+        }
+
+        .common-head-phone {
+            display: inline-block;
+            text-align: left;
+            margin-left: 6px;
+            padding-left: 6px;
+            border-left: 1px solid #B91C22;
+            color: #B91C22;
+
+            .common-head-phone-title {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .head-collapse {
+        justify-content: flex-end;
+    }
+
+    .navbar {
+        padding: 0;
+
+        .nav-item {
+            padding: 6px 2px;
+
+            .nav-link {
+                color: #333333 !important;
+                font-weight: bold;
+            }
+
+            .dropdown-menu {
+                // background: rgb(66, 45, 45);
+
+                .dropdown-item {
+                    color: #333333 !important;
+                }
+
+                .dropdown-item:hover {
+                    background: #E9EBEB !important;
+                    color: #B91C22 !important;
+                }
+            }
+
+
+        }
+
+        .nav-item:hover {
+            // background: #B91C22;
+
+            .nav-link {
+                color: #B91C22 !important;
+                font-weight: bold;
+            }
+
+        }
+
+
+        .active {
+            // background: #B91C22;
+
+            .nav-link {
+                color: #B91C22 !important;
+                font-weight: bold;
+            }
+        }
+    }
+}

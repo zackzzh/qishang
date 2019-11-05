@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet/less" href="../css/ranking/ranking.less" />
+    <script src="../config/dots_sum.js"></script>
+    <script src="../config/head_import.js"></script>
+
+    <title>启尚-大学排名</title>
+</head>
+
+<body>
+
+    <div class="ranking-main-div">
+        <div id="common-head"></div>
+        <div id="common-qr"></div>
+        <div id="common-modal"></div>
+        <div class="ranking-head-div">
+            <img src="../img/ranking/headbg.png" />
+            <div class="ranking-head-text wow fadeIn" data-wow-duration="3s">
+                <div class="ranking-head-title">英国《卫报》2017年最新英国大学排名</div>
+                <div class="ranking-head-subtitle">筑梦英伦，你需要最全面的大学排名信息做指导！</div>
+                <div class="ranking-head-subtitle">50多个专业，逾百所英国大学，《卫报》以侧重就业的视角，带你详细品读各校短长！</div>
+            </div>
+        </div>
+        <div class="ranking-content-main-div container">
+            <div class="ranking-content-div wow fadeIn" data-wow-duration="3s">
+                <div class="ranking-content-title">
+                    大学综合排名变化
+                </div>
+                <div class="ranking-content-content">
+                    英国《卫报》2016年最新英国大学排名现已发布。和去年相比，榜单中前三名岿然不动，分别为剑桥大学、牛津大学与圣安德鲁斯大学；萨里大学擢升两名来到第四，去年的第四名巴斯大学则小退一步成为第五；杜伦大学与华威大学并列第六，帝国理工退至第八；埃克赛特大学首度进入前十、名列第九，兰卡斯特大学则与去年持平，搭上了前十名的末班车；去年第七名的伦敦政经学院遗憾的跌出前十，与另一所伦敦名校伦敦大学学院（UCL）分别成为了13、12名。可以看出，传统院校虽占据主动，新兴院校的强劲势头也不容小觑。
+                </div>
+                <div class="ranking-content-content-link">
+                    英国《卫报》2016年最新英国大学排名 完整名单
+                </div>
+                <div class="ranking-content-content">
+                    《卫报》大学排名采用独特视角，更加侧重于就业角度，并主要依据在读生对大学各方面的评价综合而出，如：教学资源满意度、师生比例满意度、学生学习投入度、录取标
+                    准、参考价值、就业率满意度、整体满意度等。《卫报》大学排名涵盖了50多个专业与百余所英国大学，是广大留学家庭亟需的择校指南。
+                </div>
+            </div>
+            <!-- 大学排名 -->
+            <div id="ranking-content-top20" class="ranking-content-top20 wow fadeIn" data-wow-duration="3s">
+                <div class="ranking-content-top20-title">2019年最新全球大学排名 TOP20</div>
+                <div class="ranking-content-top20-country">
+                    <div class="ranking-content-top20-country-title">
+                        <img src="../img/ranking/academy.png" />院校排名
+                    </div>
+                    <div class="row ranking-content-top20-countrys">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'world')"
+                            id="defaultOpen">世界</div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'USA')">美国
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'UK')">英国
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'AUST')">澳大利亚
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'CHINA')">中国
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'SWIT')">瑞士
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'CANDA')">加拿大
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'HK')">香港
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'NETH')">荷兰
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'FRANCE')">法国
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 country" onclick="openCity(event, 'GERM')">德国
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="world">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                            <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                            <div class="ranking-content-top20-ranking-content">加州理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                            <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                            <div class="ranking-content-top20-ranking-content">苏黎世联邦理工学院（瑞士联邦理工学院）</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦帝国理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">芝加哥大学</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦大学学院</div>
+                            <div class="ranking-content-top20-ranking-content">新加坡国立大学</div>
+                            <div class="ranking-content-top20-ranking-content">南洋理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">普林斯顿大学</div>
+                            <div class="ranking-content-top20-ranking-content">康奈尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">耶鲁大学</div>
+                            <div class="ranking-content-top20-ranking-content">哥伦比亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">清华大学</div>
+                            <div class="ranking-content-top20-ranking-content">爱丁堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">宾夕法尼亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">密歇根大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">新加坡</div>
+                            <div class="ranking-content-top20-ranking-content">新加坡</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">1</div>
+                            <div class="ranking-content-top20-ranking-content">2</div>
+                            <div class="ranking-content-top20-ranking-content">3</div>
+                            <div class="ranking-content-top20-ranking-content">4</div>
+                            <div class="ranking-content-top20-ranking-content">6</div>
+                            <div class="ranking-content-top20-ranking-content">5</div>
+                            <div class="ranking-content-top20-ranking-content">10</div>
+                            <div class="ranking-content-top20-ranking-content">8</div>
+                            <div class="ranking-content-top20-ranking-content">9</div>
+                            <div class="ranking-content-top20-ranking-content">7</div>
+                            <div class="ranking-content-top20-ranking-content">15</div>
+                            <div class="ranking-content-top20-ranking-content">11</div>
+                            <div class="ranking-content-top20-ranking-content">13</div>
+                            <div class="ranking-content-top20-ranking-content">14</div>
+                            <div class="ranking-content-top20-ranking-content">16</div>
+                            <div class="ranking-content-top20-ranking-content">18</div>
+                            <div class="ranking-content-top20-ranking-content">25</div>
+                            <div class="ranking-content-top20-ranking-content">23</div>
+                            <div class="ranking-content-top20-ranking-content">19</div>
+                            <div class="ranking-content-top20-ranking-content">21</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">1</div>
+                            <div class="ranking-content-top20-ranking-content">2</div>
+                            <div class="ranking-content-top20-ranking-content">3</div>
+                            <div class="ranking-content-top20-ranking-content">4</div>
+                            <div class="ranking-content-top20-ranking-content">5</div>
+                            <div class="ranking-content-top20-ranking-content">6</div>
+                            <div class="ranking-content-top20-ranking-content">7</div>
+                            <div class="ranking-content-top20-ranking-content">8</div>
+                            <div class="ranking-content-top20-ranking-content">9</div>
+                            <div class="ranking-content-top20-ranking-content">10</div>
+                            <div class="ranking-content-top20-ranking-content">11</div>
+                            <div class="ranking-content-top20-ranking-content">12</div>
+                            <div class="ranking-content-top20-ranking-content">13</div>
+                            <div class="ranking-content-top20-ranking-content">14</div>
+                            <div class="ranking-content-top20-ranking-content">15</div>
+                            <div class="ranking-content-top20-ranking-content">16</div>
+                            <div class="ranking-content-top20-ranking-content">17</div>
+                            <div class="ranking-content-top20-ranking-content">18</div>
+                            <div class="ranking-content-top20-ranking-content">19</div>
+                            <div class="ranking-content-top20-ranking-content">20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="USA">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                            <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                            <div class="ranking-content-top20-ranking-content">加州理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">芝加哥大学</div>
+                            <div class="ranking-content-top20-ranking-content">普林斯顿大学</div>
+                            <div class="ranking-content-top20-ranking-content">康奈尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">耶鲁大学</div>
+                            <div class="ranking-content-top20-ranking-content">哥伦比亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">宾夕法尼亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">密歇根大学</div>
+                            <div class="ranking-content-top20-ranking-content">约翰霍普金斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">杜克大学</div>
+                            <div class="ranking-content-top20-ranking-content">加州大学伯克利分校（UCB）</div>
+                            <div class="ranking-content-top20-ranking-content">加州大学洛杉矶分校</div>
+                            <div class="ranking-content-top20-ranking-content">西北大学</div>
+                            <div class="ranking-content-top20-ranking-content">加州大学圣地亚哥分校（UCSD）</div>
+                            <div class="ranking-content-top20-ranking-content">纽约大学</div>
+                            <div class="ranking-content-top20-ranking-content">卡内基梅隆大学</div>
+                            <div class="ranking-content-top20-ranking-content">威斯康星大学麦迪逊分校</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                            <div class="ranking-content-top20-ranking-content">美国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">1</div>
+                            <div class="ranking-content-top20-ranking-content">2</div>
+                            <div class="ranking-content-top20-ranking-content">3</div>
+                            <div class="ranking-content-top20-ranking-content">4</div>
+                            <div class="ranking-content-top20-ranking-content">9</div>
+                            <div class="ranking-content-top20-ranking-content">13</div>
+                            <div class="ranking-content-top20-ranking-content">14</div>
+                            <div class="ranking-content-top20-ranking-content">16</div>
+                            <div class="ranking-content-top20-ranking-content">18</div>
+                            <div class="ranking-content-top20-ranking-content">19</div>
+                            <div class="ranking-content-top20-ranking-content">21</div>
+                            <div class="ranking-content-top20-ranking-content">17</div>
+                            <div class="ranking-content-top20-ranking-content">21</div>
+                            <div class="ranking-content-top20-ranking-content">27</div>
+                            <div class="ranking-content-top20-ranking-content">33</div>
+                            <div class="ranking-content-top20-ranking-content">28</div>
+                            <div class="ranking-content-top20-ranking-content">38</div>
+                            <div class="ranking-content-top20-ranking-content">52</div>
+                            <div class="ranking-content-top20-ranking-content">47</div>
+                            <div class="ranking-content-top20-ranking-content">55</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">1</div>
+                            <div class="ranking-content-top20-ranking-content">2</div>
+                            <div class="ranking-content-top20-ranking-content">3</div>
+                            <div class="ranking-content-top20-ranking-content">4</div>
+                            <div class="ranking-content-top20-ranking-content">9</div>
+                            <div class="ranking-content-top20-ranking-content">13</div>
+                            <div class="ranking-content-top20-ranking-content">14</div>
+                            <div class="ranking-content-top20-ranking-content">15</div>
+                            <div class="ranking-content-top20-ranking-content">16</div>
+                            <div class="ranking-content-top20-ranking-content">19</div>
+                            <div class="ranking-content-top20-ranking-content">20</div>
+                            <div class="ranking-content-top20-ranking-content">21</div>
+                            <div class="ranking-content-top20-ranking-content">26</div>
+                            <div class="ranking-content-top20-ranking-content">27</div>
+                            <div class="ranking-content-top20-ranking-content">32</div>
+                            <div class="ranking-content-top20-ranking-content">34</div>
+                            <div class="ranking-content-top20-ranking-content">41</div>
+                            <div class="ranking-content-top20-ranking-content">43</div>
+                            <div class="ranking-content-top20-ranking-content">46</div>
+                            <div class="ranking-content-top20-ranking-content">53</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="UK">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                            <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦帝国理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦大学学院</div>
+                            <div class="ranking-content-top20-ranking-content">爱丁堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">曼彻斯特大学</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦国王学院（KCL）</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦政治经济学院</div>
+                            <div class="ranking-content-top20-ranking-content">布里斯托尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">华威大学</div>
+                            <div class="ranking-content-top20-ranking-content">格拉斯哥大学</div>
+                            <div class="ranking-content-top20-ranking-content">杜伦大学</div>
+                            <div class="ranking-content-top20-ranking-content">谢菲尔德大学</div>
+                            <div class="ranking-content-top20-ranking-content">伯明翰大学</div>
+                            <div class="ranking-content-top20-ranking-content">诺丁汉大学</div>
+                            <div class="ranking-content-top20-ranking-content">利兹大学</div>
+                            <div class="ranking-content-top20-ranking-content">南安普顿大学</div>
+                            <div class="ranking-content-top20-ranking-content">圣安德鲁斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">伦敦玛丽女王大学</div>
+                            <div class="ranking-content-top20-ranking-content">兰开斯特大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                            <div class="ranking-content-top20-ranking-content">英国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">6</div>
+                            <div class="ranking-content-top20-ranking-content">5</div>
+                            <div class="ranking-content-top20-ranking-content">8</div>
+                            <div class="ranking-content-top20-ranking-content">7</div>
+                            <div class="ranking-content-top20-ranking-content">23</div>
+                            <div class="ranking-content-top20-ranking-content">34</div>
+                            <div class="ranking-content-top20-ranking-content">23</div>
+                            <div class="ranking-content-top20-ranking-content">35</div>
+                            <div class="ranking-content-top20-ranking-content">44</div>
+                            <div class="ranking-content-top20-ranking-content">57</div>
+                            <div class="ranking-content-top20-ranking-content">65</div>
+                            <div class="ranking-content-top20-ranking-content">78</div>
+                            <div class="ranking-content-top20-ranking-content">82</div>
+                            <div class="ranking-content-top20-ranking-content">84</div>
+                            <div class="ranking-content-top20-ranking-content">84</div>
+                            <div class="ranking-content-top20-ranking-content">101</div>
+                            <div class="ranking-content-top20-ranking-content">102</div>
+                            <div class="ranking-content-top20-ranking-content">92</div>
+                            <div class="ranking-content-top20-ranking-content">127</div>
+                            <div class="ranking-content-top20-ranking-content">135</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">5</div>
+                            <div class="ranking-content-top20-ranking-content">6</div>
+                            <div class="ranking-content-top20-ranking-content">8</div>
+                            <div class="ranking-content-top20-ranking-content">10</div>
+                            <div class="ranking-content-top20-ranking-content">18</div>
+                            <div class="ranking-content-top20-ranking-content">29</div>
+                            <div class="ranking-content-top20-ranking-content">31</div>
+                            <div class="ranking-content-top20-ranking-content">38</div>
+                            <div class="ranking-content-top20-ranking-content">51</div>
+                            <div class="ranking-content-top20-ranking-content">54</div>
+                            <div class="ranking-content-top20-ranking-content">69</div>
+                            <div class="ranking-content-top20-ranking-content">74</div>
+                            <div class="ranking-content-top20-ranking-content">75</div>
+                            <div class="ranking-content-top20-ranking-content">79</div>
+                            <div class="ranking-content-top20-ranking-content">82</div>
+                            <div class="ranking-content-top20-ranking-content">93</div>
+                            <div class="ranking-content-top20-ranking-content">96</div>
+                            <div class="ranking-content-top20-ranking-content">97</div>
+                            <div class="ranking-content-top20-ranking-content">119</div>
+                            <div class="ranking-content-top20-ranking-content">131</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="AUST">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚国立大学</div>
+                            <div class="ranking-content-top20-ranking-content">墨尔本大学</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚悉尼大学</div>
+                            <div class="ranking-content-top20-ranking-content">新南威尔士大学</div>
+                            <div class="ranking-content-top20-ranking-content">昆士兰大学</div>
+                            <div class="ranking-content-top20-ranking-content">莫纳什大学</div>
+                            <div class="ranking-content-top20-ranking-content">西澳大利亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">阿德莱德大学</div>
+                            <div class="ranking-content-top20-ranking-content">悉尼理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">纽卡斯尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">卧龙贡大学</div>
+                            <div class="ranking-content-top20-ranking-content">昆士兰理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">科廷大学</div>
+                            <div class="ranking-content-top20-ranking-content">麦格理大学</div>
+                            <div class="ranking-content-top20-ranking-content">皇家理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">南澳大利亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">塔斯马尼亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">迪肯大学</div>
+                            <div class="ranking-content-top20-ranking-content">格里菲斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">詹姆斯库克大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                            <div class="ranking-content-top20-ranking-content">澳大利亚</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">20</div>
+                            <div class="ranking-content-top20-ranking-content">41</div>
+                            <div class="ranking-content-top20-ranking-content">50</div>
+                            <div class="ranking-content-top20-ranking-content">45</div>
+                            <div class="ranking-content-top20-ranking-content">47</div>
+                            <div class="ranking-content-top20-ranking-content">60</div>
+                            <div class="ranking-content-top20-ranking-content">93</div>
+                            <div class="ranking-content-top20-ranking-content">109</div>
+                            <div class="ranking-content-top20-ranking-content">176</div>
+                            <div class="ranking-content-top20-ranking-content">224</div>
+                            <div class="ranking-content-top20-ranking-content">232</div>
+                            <div class="ranking-content-top20-ranking-content">247</div>
+                            <div class="ranking-content-top20-ranking-content">262</div>
+                            <div class="ranking-content-top20-ranking-content">240</div>
+                            <div class="ranking-content-top20-ranking-content">247</div>
+                            <div class="ranking-content-top20-ranking-content">279</div>
+                            <div class="ranking-content-top20-ranking-content">313</div>
+                            <div class="ranking-content-top20-ranking-content">293</div>
+                            <div class="ranking-content-top20-ranking-content">325</div>
+                            <div class="ranking-content-top20-ranking-content">367</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">24</div>
+                            <div class="ranking-content-top20-ranking-content">39</div>
+                            <div class="ranking-content-top20-ranking-content">42</div>
+                            <div class="ranking-content-top20-ranking-content">45</div>
+                            <div class="ranking-content-top20-ranking-content">48</div>
+                            <div class="ranking-content-top20-ranking-content">59</div>
+                            <div class="ranking-content-top20-ranking-content">91</div>
+                            <div class="ranking-content-top20-ranking-content">114</div>
+                            <div class="ranking-content-top20-ranking-content">160</div>
+                            <div class="ranking-content-top20-ranking-content">214</div>
+                            <div class="ranking-content-top20-ranking-content">218</div>
+                            <div class="ranking-content-top20-ranking-content">244</div>
+                            <div class="ranking-content-top20-ranking-content">250</div>
+                            <div class="ranking-content-top20-ranking-content">250</div>
+                            <div class="ranking-content-top20-ranking-content">250</div>
+                            <div class="ranking-content-top20-ranking-content">264</div>
+                            <div class="ranking-content-top20-ranking-content">287</div>
+                            <div class="ranking-content-top20-ranking-content">309</div>
+                            <div class="ranking-content-top20-ranking-content">329</div>
+                            <div class="ranking-content-top20-ranking-content">369</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="CHINA">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">清华大学</div>
+                            <div class="ranking-content-top20-ranking-content">北京大学</div>
+                            <div class="ranking-content-top20-ranking-content">复旦大学</div>
+                            <div class="ranking-content-top20-ranking-content">上海交通大学</div>
+                            <div class="ranking-content-top20-ranking-content">浙江大学</div>
+                            <div class="ranking-content-top20-ranking-content">中国科技大学</div>
+                            <div class="ranking-content-top20-ranking-content">南京大学</div>
+                            <div class="ranking-content-top20-ranking-content">武汉大学</div>
+                            <div class="ranking-content-top20-ranking-content">哈尔滨工业大学</div>
+                            <div class="ranking-content-top20-ranking-content">同济大学</div>
+                            <div class="ranking-content-top20-ranking-content">北京师范大学</div>
+                            <div class="ranking-content-top20-ranking-content">中山大学</div>
+                            <div class="ranking-content-top20-ranking-content">西安交通大学</div>
+                            <div class="ranking-content-top20-ranking-content">南开大学</div>
+                            <div class="ranking-content-top20-ranking-content">华中科技大学</div>
+                            <div class="ranking-content-top20-ranking-content">上海大学</div>
+                            <div class="ranking-content-top20-ranking-content">天津大学</div>
+                            <div class="ranking-content-top20-ranking-content">北京理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">吉林大学</div>
+                            <div class="ranking-content-top20-ranking-content">厦门大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                            <div class="ranking-content-top20-ranking-content">中国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">25</div>
+                            <div class="ranking-content-top20-ranking-content">38</div>
+                            <div class="ranking-content-top20-ranking-content">40</div>
+                            <div class="ranking-content-top20-ranking-content">62</div>
+                            <div class="ranking-content-top20-ranking-content">87</div>
+                            <div class="ranking-content-top20-ranking-content">97</div>
+                            <div class="ranking-content-top20-ranking-content">114</div>
+                            <div class="ranking-content-top20-ranking-content">282</div>
+                            <div class="ranking-content-top20-ranking-content">325</div>
+                            <div class="ranking-content-top20-ranking-content">316</div>
+                            <div class="ranking-content-top20-ranking-content">256</div>
+                            <div class="ranking-content-top20-ranking-content">319</div>
+                            <div class="ranking-content-top20-ranking-content">344</div>
+                            <div class="ranking-content-top20-ranking-content">344</div>
+                            <div class="ranking-content-top20-ranking-content">471-480</div>
+                            <div class="ranking-content-top20-ranking-content">421-430</div>
+                            <div class="ranking-content-top20-ranking-content">471-480</div>
+                            <div class="ranking-content-top20-ranking-content">451-460</div>
+                            <div class="ranking-content-top20-ranking-content">491-500</div>
+                            <div class="ranking-content-top20-ranking-content">431-440</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">17</div>
+                            <div class="ranking-content-top20-ranking-content">30</div>
+                            <div class="ranking-content-top20-ranking-content">44</div>
+                            <div class="ranking-content-top20-ranking-content">59</div>
+                            <div class="ranking-content-top20-ranking-content">68</div>
+                            <div class="ranking-content-top20-ranking-content">98</div>
+                            <div class="ranking-content-top20-ranking-content">122</div>
+                            <div class="ranking-content-top20-ranking-content">257</div>
+                            <div class="ranking-content-top20-ranking-content">285</div>
+                            <div class="ranking-content-top20-ranking-content">291</div>
+                            <div class="ranking-content-top20-ranking-content">292</div>
+                            <div class="ranking-content-top20-ranking-content">295</div>
+                            <div class="ranking-content-top20-ranking-content">313</div>
+                            <div class="ranking-content-top20-ranking-content">338</div>
+                            <div class="ranking-content-top20-ranking-content">415</div>
+                            <div class="ranking-content-top20-ranking-content">422</div>
+                            <div class="ranking-content-top20-ranking-content">443</div>
+                            <div class="ranking-content-top20-ranking-content">464</div>
+                            <div class="ranking-content-top20-ranking-content">475</div>
+                            <div class="ranking-content-top20-ranking-content">476</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="SWIT">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">苏黎世联邦理工学院（瑞士联邦理工学院）</div>
+                            <div class="ranking-content-top20-ranking-content">洛桑理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">苏黎世大学</div>
+                            <div class="ranking-content-top20-ranking-content">日内瓦大学</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士伯尔尼大学</div>
+                            <div class="ranking-content-top20-ranking-content">洛桑大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴塞尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">圣加仑大学</div>
+                            <div class="ranking-content-top20-ranking-content">弗里堡大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                            <div class="ranking-content-top20-ranking-content">瑞士</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">10</div>
+                            <div class="ranking-content-top20-ranking-content">12</div>
+                            <div class="ranking-content-top20-ranking-content">73</div>
+                            <div class="ranking-content-top20-ranking-content">98</div>
+                            <div class="ranking-content-top20-ranking-content">167</div>
+                            <div class="ranking-content-top20-ranking-content">146</div>
+                            <div class="ranking-content-top20-ranking-content">149</div>
+                            <div class="ranking-content-top20-ranking-content">372</div>
+                            <div class="ranking-content-top20-ranking-content">501-550</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">7</div>
+                            <div class="ranking-content-top20-ranking-content">22</div>
+                            <div class="ranking-content-top20-ranking-content">78</div>
+                            <div class="ranking-content-top20-ranking-content">108</div>
+                            <div class="ranking-content-top20-ranking-content">139</div>
+                            <div class="ranking-content-top20-ranking-content">149</div>
+                            <div class="ranking-content-top20-ranking-content">160</div>
+                            <div class="ranking-content-top20-ranking-content">375</div>
+                            <div class="ranking-content-top20-ranking-content">601-650</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="CANDA">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">多伦多大学</div>
+                            <div class="ranking-content-top20-ranking-content">麦吉尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">不列颠哥伦比亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">阿尔伯塔大学</div>
+                            <div class="ranking-content-top20-ranking-content">麦克马斯特大学</div>
+                            <div class="ranking-content-top20-ranking-content">蒙特利尔大学</div>
+                            <div class="ranking-content-top20-ranking-content">滑铁卢大学</div>
+                            <div class="ranking-content-top20-ranking-content">西方大学</div>
+                            <div class="ranking-content-top20-ranking-content">卡尔加里大学</div>
+                            <div class="ranking-content-top20-ranking-content">女王大学</div>
+                            <div class="ranking-content-top20-ranking-content">西蒙弗雷泽大学</div>
+                            <div class="ranking-content-top20-ranking-content">达尔豪西大学</div>
+                            <div class="ranking-content-top20-ranking-content">渥太华大学</div>
+                            <div class="ranking-content-top20-ranking-content">维多利亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">拉瓦爾大學</div>
+                            <div class="ranking-content-top20-ranking-content">萨斯喀彻温大学</div>
+                            <div class="ranking-content-top20-ranking-content">康考迪亚大学</div>
+                            <div class="ranking-content-top20-ranking-content">约克大学</div>
+                            <div class="ranking-content-top20-ranking-content">魁北克大学</div>
+                            <div class="ranking-content-top20-ranking-content">盖尔夫大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                            <div class="ranking-content-top20-ranking-content">加拿大</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">31</div>
+                            <div class="ranking-content-top20-ranking-content">32</div>
+                            <div class="ranking-content-top20-ranking-content">51</div>
+                            <div class="ranking-content-top20-ranking-content">90</div>
+                            <div class="ranking-content-top20-ranking-content">140</div>
+                            <div class="ranking-content-top20-ranking-content">130</div>
+                            <div class="ranking-content-top20-ranking-content">152</div>
+                            <div class="ranking-content-top20-ranking-content">210</div>
+                            <div class="ranking-content-top20-ranking-content">217</div>
+                            <div class="ranking-content-top20-ranking-content">224</div>
+                            <div class="ranking-content-top20-ranking-content">245</div>
+                            <div class="ranking-content-top20-ranking-content">279</div>
+                            <div class="ranking-content-top20-ranking-content">289</div>
+                            <div class="ranking-content-top20-ranking-content">346</div>
+                            <div class="ranking-content-top20-ranking-content">378</div>
+                            <div class="ranking-content-top20-ranking-content">451-460</div>
+                            <div class="ranking-content-top20-ranking-content">431-440</div>
+                            <div class="ranking-content-top20-ranking-content">441-450</div>
+                            <div class="ranking-content-top20-ranking-content">501-550</div>
+                            <div class="ranking-content-top20-ranking-content">491-500</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">28</div>
+                            <div class="ranking-content-top20-ranking-content">33</div>
+                            <div class="ranking-content-top20-ranking-content">47</div>
+                            <div class="ranking-content-top20-ranking-content">109</div>
+                            <div class="ranking-content-top20-ranking-content">146</div>
+                            <div class="ranking-content-top20-ranking-content">149</div>
+                            <div class="ranking-content-top20-ranking-content">163</div>
+                            <div class="ranking-content-top20-ranking-content">214</div>
+                            <div class="ranking-content-top20-ranking-content">229</div>
+                            <div class="ranking-content-top20-ranking-content">239</div>
+                            <div class="ranking-content-top20-ranking-content">264</div>
+                            <div class="ranking-content-top20-ranking-content">279</div>
+                            <div class="ranking-content-top20-ranking-content">289</div>
+                            <div class="ranking-content-top20-ranking-content">359</div>
+                            <div class="ranking-content-top20-ranking-content">402</div>
+                            <div class="ranking-content-top20-ranking-content">461</div>
+                            <div class="ranking-content-top20-ranking-content">464</div>
+                            <div class="ranking-content-top20-ranking-content">481</div>
+                            <div class="ranking-content-top20-ranking-content">541-550</div>
+                            <div class="ranking-content-top20-ranking-content">581-590</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="HK">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">香港大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港科技大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港中文大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港城市大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港浸会大学</div>
+                            <div class="ranking-content-top20-ranking-content">香港岭南大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                            <div class="ranking-content-top20-ranking-content">香港</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">26</div>
+                            <div class="ranking-content-top20-ranking-content">30</div>
+                            <div class="ranking-content-top20-ranking-content">46</div>
+                            <div class="ranking-content-top20-ranking-content">49</div>
+                            <div class="ranking-content-top20-ranking-content">95</div>
+                            <div class="ranking-content-top20-ranking-content">299</div>
+                            <div class="ranking-content-top20-ranking-content">551-600</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">25</div>
+                            <div class="ranking-content-top20-ranking-content">37</div>
+                            <div class="ranking-content-top20-ranking-content">49</div>
+                            <div class="ranking-content-top20-ranking-content">55</div>
+                            <div class="ranking-content-top20-ranking-content">106</div>
+                            <div class="ranking-content-top20-ranking-content">277</div>
+                            <div class="ranking-content-top20-ranking-content">601-650</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="NETH">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">代尔夫特理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">阿姆斯特丹大学</div>
+                            <div class="ranking-content-top20-ranking-content">埃因霍温理工大学</div>
+                            <div class="ranking-content-top20-ranking-content">格罗宁根大学</div>
+                            <div class="ranking-content-top20-ranking-content">莱顿大学</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰乌得勒支大学</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰瓦赫宁根大学</div>
+                            <div class="ranking-content-top20-ranking-content">特温特大学</div>
+                            <div class="ranking-content-top20-ranking-content">鹿特丹伊拉斯姆斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">内梅亨大学</div>
+                            <div class="ranking-content-top20-ranking-content">马斯特里赫特大学</div>
+                            <div class="ranking-content-top20-ranking-content">阿姆斯特丹自由大学</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰蒂尔堡大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                            <div class="ranking-content-top20-ranking-content">荷兰</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">54</div>
+                            <div class="ranking-content-top20-ranking-content">58</div>
+                            <div class="ranking-content-top20-ranking-content">104</div>
+                            <div class="ranking-content-top20-ranking-content">113</div>
+                            <div class="ranking-content-top20-ranking-content">109</div>
+                            <div class="ranking-content-top20-ranking-content">109</div>
+                            <div class="ranking-content-top20-ranking-content">124</div>
+                            <div class="ranking-content-top20-ranking-content">179</div>
+                            <div class="ranking-content-top20-ranking-content">147</div>
+                            <div class="ranking-content-top20-ranking-content">204</div>
+                            <div class="ranking-content-top20-ranking-content">200</div>
+                            <div class="ranking-content-top20-ranking-content">218</div>
+                            <div class="ranking-content-top20-ranking-content">357</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">52</div>
+                            <div class="ranking-content-top20-ranking-content">57</div>
+                            <div class="ranking-content-top20-ranking-content">99</div>
+                            <div class="ranking-content-top20-ranking-content">120</div>
+                            <div class="ranking-content-top20-ranking-content">122</div>
+                            <div class="ranking-content-top20-ranking-content">124</div>
+                            <div class="ranking-content-top20-ranking-content">125</div>
+                            <div class="ranking-content-top20-ranking-content">172</div>
+                            <div class="ranking-content-top20-ranking-content">179</div>
+                            <div class="ranking-content-top20-ranking-content">204</div>
+                            <div class="ranking-content-top20-ranking-content">211</div>
+                            <div class="ranking-content-top20-ranking-content">231</div>
+                            <div class="ranking-content-top20-ranking-content">319</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="FRANCE">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎文理研究大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎综合理工学院</div>
+                            <div class="ranking-content-top20-ranking-content">索邦大学</div>
+                            <div class="ranking-content-top20-ranking-content">中央大学</div>
+                            <div class="ranking-content-top20-ranking-content">里昂高等师范学院</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎政治学院</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎第十一大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎桥经济学院</div>
+                            <div class="ranking-content-top20-ranking-content">格勒诺布尔阿尔卑斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎第七大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎大学索邦大学</div>
+                            <div class="ranking-content-top20-ranking-content">卡尚高等师范学校</div>
+                            <div class="ranking-content-top20-ranking-content">斯特拉斯堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">蒙彼利埃大学</div>
+                            <div class="ranking-content-top20-ranking-content">马赛艾克斯大学</div>
+                            <div class="ranking-content-top20-ranking-content">国家科学院里昂应用研究所</div>
+                            <div class="ranking-content-top20-ranking-content">波尔多大学</div>
+                            <div class="ranking-content-top20-ranking-content">图卢兹大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎第二大学</div>
+                            <div class="ranking-content-top20-ranking-content">巴黎笛卡尔大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                            <div class="ranking-content-top20-ranking-content">法国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">50</div>
+                            <div class="ranking-content-top20-ranking-content">59</div>
+                            <div class="ranking-content-top20-ranking-content">75</div>
+                            <div class="ranking-content-top20-ranking-content">177</div>
+                            <div class="ranking-content-top20-ranking-content">157</div>
+                            <div class="ranking-content-top20-ranking-content">220</div>
+                            <div class="ranking-content-top20-ranking-content">242</div>
+                            <div class="ranking-content-top20-ranking-content">270</div>
+                            <div class="ranking-content-top20-ranking-content">236</div>
+                            <div class="ranking-content-top20-ranking-content">305</div>
+                            <div class="ranking-content-top20-ranking-content">269</div>
+                            <div class="ranking-content-top20-ranking-content">330</div>
+                            <div class="ranking-content-top20-ranking-content">303</div>
+                            <div class="ranking-content-top20-ranking-content">381</div>
+                            <div class="ranking-content-top20-ranking-content">411-420</div>
+                            <div class="ranking-content-top20-ranking-content">451-460</div>
+                            <div class="ranking-content-top20-ranking-content">501-550</div>
+                            <div class="ranking-content-top20-ranking-content">501-550</div>
+                            <div class="ranking-content-top20-ranking-content">551-600</div>
+                            <div class="ranking-content-top20-ranking-content">441-450</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">50</div>
+                            <div class="ranking-content-top20-ranking-content">65</div>
+                            <div class="ranking-content-top20-ranking-content">75</div>
+                            <div class="ranking-content-top20-ranking-content">137</div>
+                            <div class="ranking-content-top20-ranking-content">153</div>
+                            <div class="ranking-content-top20-ranking-content">221</div>
+                            <div class="ranking-content-top20-ranking-content">239</div>
+                            <div class="ranking-content-top20-ranking-content">263</div>
+                            <div class="ranking-content-top20-ranking-content">289</div>
+                            <div class="ranking-content-top20-ranking-content">295</div>
+                            <div class="ranking-content-top20-ranking-content">299</div>
+                            <div class="ranking-content-top20-ranking-content">305</div>
+                            <div class="ranking-content-top20-ranking-content">348</div>
+                            <div class="ranking-content-top20-ranking-content">422</div>
+                            <div class="ranking-content-top20-ranking-content">453</div>
+                            <div class="ranking-content-top20-ranking-content">478</div>
+                            <div class="ranking-content-top20-ranking-content">489</div>
+                            <div class="ranking-content-top20-ranking-content">521-530</div>
+                            <div class="ranking-content-top20-ranking-content">531-540</div>
+                            <div class="ranking-content-top20-ranking-content">571-580</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ranking-content-top20-ranking tabcontent" id="GERM">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ranking-content-top20-ranking-item">
+                        <div style="text-align: left;">
+                            <div class="ranking-content-top20-ranking-title">院校</div>
+                            <div class="ranking-content-top20-ranking-content">慕尼黑技术大学</div>
+                            <div class="ranking-content-top20-ranking-content">德国慕尼黑路德维希-马克西米利安大学</div>
+                            <div class="ranking-content-top20-ranking-content">卡尔斯鲁大学海德堡</div>
+                            <div class="ranking-content-top20-ranking-content">卡尔斯鲁厄技术研究所</div>
+                            <div class="ranking-content-top20-ranking-content">柏林洪堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">柏林自由大学</div>
+                            <div class="ranking-content-top20-ranking-content">亚琛工业大学</div>
+                            <div class="ranking-content-top20-ranking-content">柏林技术大学</div>
+                            <div class="ranking-content-top20-ranking-content">图宾根大学</div>
+                            <div class="ranking-content-top20-ranking-content">弗莱堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">德国德累斯顿技术大学</div>
+                            <div class="ranking-content-top20-ranking-content">哥廷根大学，哥廷根</div>
+                            <div class="ranking-content-top20-ranking-content">汉堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">达姆施塔特技术大学</div>
+                            <div class="ranking-content-top20-ranking-content">波恩-莱茵弗里德里希·威廉大学</div>
+                            <div class="ranking-content-top20-ranking-content">斯图加特大学</div>
+                            <div class="ranking-content-top20-ranking-content">法兰克福大学</div>
+                            <div class="ranking-content-top20-ranking-content">埃朗根-纽伦堡大学</div>
+                            <div class="ranking-content-top20-ranking-content">科隆大学</div>
+                            <div class="ranking-content-top20-ranking-content">耶拿大学</div>
+                        </div>
+                        <div style="text-align: center">
+                            <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                            <div class="ranking-content-top20-ranking-content">德国</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2018年排名</div>
+                            <div class="ranking-content-top20-ranking-content">66</div>
+                            <div class="ranking-content-top20-ranking-content">64</div>
+                            <div class="ranking-content-top20-ranking-content">68</div>
+                            <div class="ranking-content-top20-ranking-content">107</div>
+                            <div class="ranking-content-top20-ranking-content">120</div>
+                            <div class="ranking-content-top20-ranking-content">125</div>
+                            <div class="ranking-content-top20-ranking-content">141</div>
+                            <div class="ranking-content-top20-ranking-content">144</div>
+                            <div class="ranking-content-top20-ranking-content">164</div>
+                            <div class="ranking-content-top20-ranking-content">171</div>
+                            <div class="ranking-content-top20-ranking-content">195</div>
+                            <div class="ranking-content-top20-ranking-content">181</div>
+                            <div class="ranking-content-top20-ranking-content">223</div>
+                            <div class="ranking-content-top20-ranking-content">272</div>
+                            <div class="ranking-content-top20-ranking-content">239</div>
+                            <div class="ranking-content-top20-ranking-content">259</div>
+                            <div class="ranking-content-top20-ranking-content">254</div>
+                            <div class="ranking-content-top20-ranking-content">287</div>
+                            <div class="ranking-content-top20-ranking-content">331</div>
+                            <div class="ranking-content-top20-ranking-content">341</div>
+                        </div>
+                        <div>
+                            <div class="ranking-content-top20-ranking-title">2019年排名</div>
+                            <div class="ranking-content-top20-ranking-content">61</div>
+                            <div class="ranking-content-top20-ranking-content">62</div>
+                            <div class="ranking-content-top20-ranking-content">64</div>
+                            <div class="ranking-content-top20-ranking-content">116</div>
+                            <div class="ranking-content-top20-ranking-content">121</div>
+                            <div class="ranking-content-top20-ranking-content">130</div>
+                            <div class="ranking-content-top20-ranking-content">144</div>
+                            <div class="ranking-content-top20-ranking-content">147</div>
+                            <div class="ranking-content-top20-ranking-content">168</div>
+                            <div class="ranking-content-top20-ranking-content">186</div>
+                            <div class="ranking-content-top20-ranking-content">191</div>
+                            <div class="ranking-content-top20-ranking-content">197</div>
+                            <div class="ranking-content-top20-ranking-content">223</div>
+                            <div class="ranking-content-top20-ranking-content">253</div>
+                            <div class="ranking-content-top20-ranking-content">255</div>
+                            <div class="ranking-content-top20-ranking-content">260</div>
+                            <div class="ranking-content-top20-ranking-content">279</div>
+                            <div class="ranking-content-top20-ranking-content">299</div>
+                            <div class="ranking-content-top20-ranking-content">306</div>
+                            <div class="ranking-content-top20-ranking-content">326</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 专业排名 -->
+            <div class="ranking-content-specialist">
+                <div id="ranking-content-specialist-title" class="ranking-content-specialist-title wow fadeIn"
+                    data-wow-duration="3s">英国《卫报》2016年最新英国大学排名
+                    专业排名
+                </div>
+                <div id="ranking-content-top20" class="ranking-content-top20 00wow fadeIn" data-wow-duration="3s">
+                    <div class="ranking-content-top20-country">
+                        <div class="ranking-content-top20-country-title">
+                            <img src="../img/ranking/academy.png" />学科排名
+                        </div>
+                        <div class="row ranking-content-top20-countrys" style="width:80%;">
+                            <div class="col-xl-3 col-md-6 col-sm-6 countrySubject"
+                                onclick="openSubject(event, 'Humanity')" id="openDefaultSubject">人文艺术
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-6 countrySubject"
+                                onclick="openSubject(event, 'Technology')">工程科技
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-6 countrySubject"
+                                onclick="openSubject(event, 'Biological')">
+                                生物科学与医学
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-6 countrySubject"
+                                onclick="openSubject(event, 'Natural')">
+                                自然科学
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-6 countrySubject"
+                                onclick="openSubject(event, 'Social')">
+                                社会科学
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters ranking-content-top20-ranking tabcontentSubject" id="Humanity">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ranking-content-top20-ranking-item ranking-content-specialist-ranking-item"
+                            style="margin: 0 auto">
+                            <div style="text-align: left;">
+                                <div class="ranking-content-top20-ranking-title">院校</div>
+                                <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                                <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                                <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学伯克利分校</div>
+                                <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                                <div class="ranking-content-top20-ranking-content">耶鲁大学</div>
+                                <div class="ranking-content-top20-ranking-content">普林斯顿大学</div>
+                                <div class="ranking-content-top20-ranking-content">哥伦比亚大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学洛杉矶分校</div>
+                                <div class="ranking-content-top20-ranking-content">纽约大学</div>
+                                <div class="ranking-content-top20-ranking-content">芝加哥大学</div>
+                                <div class="ranking-content-top20-ranking-content">东京大学</div>
+                                <div class="ranking-content-top20-ranking-content">爱丁堡大学</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡国立大学</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦大学学院</div>
+                                <div class="ranking-content-top20-ranking-content">澳大利亚国立大学</div>
+                                <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">香港大学</div>
+                                <div class="ranking-content-top20-ranking-content">多伦多大学</div>
+                                <div class="ranking-content-top20-ranking-content">墨尔本大学</div>
+                            </div>
+                            <div style="text-align: center">
+                                <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Japan 日本</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">Australia 澳大利亚</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Hong Kong 香港</div>
+                                <div class="ranking-content-top20-ranking-content">Canada 加拿大</div>
+                                <div class="ranking-content-top20-ranking-content">Australia 澳大利亚</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters ranking-content-top20-ranking tabcontentSubject" id="Technology">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ranking-content-top20-ranking-item ranking-content-specialist-ranking-item"
+                            style="margin: 0 auto">
+                            <div style="text-align: left;">
+                                <div class="ranking-content-top20-ranking-title">院校</div>
+                                <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                                <div class="ranking-content-top20-ranking-content">瑞士联邦理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学伯克利分校</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡南洋理工大学</div>
+                                <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦帝国学院</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡国立大学</div>
+                                <div class="ranking-content-top20-ranking-content">清华大学</div>
+                                <div class="ranking-content-top20-ranking-content">洛桑联邦理工大学</div>
+                                <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                                <div class="ranking-content-top20-ranking-content">东京大学</div>
+                                <div class="ranking-content-top20-ranking-content">佐治亚理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">加州理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">米兰</div>
+                                <div class="ranking-content-top20-ranking-content">德尔夫特技术大学</div>
+                                <div class="ranking-content-top20-ranking-content">香港科技大学</div>
+                                <div class="ranking-content-top20-ranking-content">卡内基梅隆大学</div>
+                                <div class="ranking-content-top20-ranking-content">北京大学</div>
+                            </div>
+                            <div style="text-align: center">
+                                <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Switzerland 瑞士</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">China 中国</div>
+                                <div class="ranking-content-top20-ranking-content">Switzerland 瑞士</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Japan 日本</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Italy 意大利</div>
+                                <div class="ranking-content-top20-ranking-content">Netherlands 荷兰</div>
+                                <div class="ranking-content-top20-ranking-content">Hong Kong 香港</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">China 中国</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters ranking-content-top20-ranking tabcontentSubject" id="Biological">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ranking-content-top20-ranking-item ranking-content-specialist-ranking-item"
+                            style="margin: 0 auto">
+                            <div style="text-align: left;">
+                                <div class="ranking-content-top20-ranking-title">院校</div>
+                                <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                                <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                                <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                                <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                                <div class="ranking-content-top20-ranking-content">约翰·霍普金斯大学</div>
+                                <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学旧金山分校</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学洛杉矶分校</div>
+                                <div class="ranking-content-top20-ranking-content">Karolinska研究所</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦大学学院</div>
+                                <div class="ranking-content-top20-ranking-content">多伦多大学</div>
+                                <div class="ranking-content-top20-ranking-content">耶鲁大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学圣地亚哥分校</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦帝国学院</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学伯克利分校</div>
+                                <div class="ranking-content-top20-ranking-content">宾夕法尼亚大学</div>
+                                <div class="ranking-content-top20-ranking-content">哥伦比亚大学</div>
+                                <div class="ranking-content-top20-ranking-content">杜克大学</div>
+                                <div class="ranking-content-top20-ranking-content">爱丁堡大学</div>
+                                <div class="ranking-content-top20-ranking-content">华盛顿大学</div>
+                            </div>
+                            <div style="text-align: center">
+                                <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Sweden 瑞典</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">Canada 加拿大</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters ranking-content-top20-ranking tabcontentSubject" id="Natural">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ranking-content-top20-ranking-item ranking-content-specialist-ranking-item"
+                            style="margin: 0 auto">
+                            <div style="text-align: left;">
+                                <div class="ranking-content-top20-ranking-title">院校</div>
+                                <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                                <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                                <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                                <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                                <div class="ranking-content-top20-ranking-content">瑞士联邦理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学伯克利分校</div>
+                                <div class="ranking-content-top20-ranking-content">加州理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">东京大学</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦帝国学院</div>
+                                <div class="ranking-content-top20-ranking-content">普林斯顿大学</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡国立大学</div>
+                                <div class="ranking-content-top20-ranking-content">EPFL-Ecole Polytech Federale de
+                                    Lausanne
+                                </div>
+                                <div class="ranking-content-top20-ranking-content">北京大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学洛杉矶分校</div>
+                                <div class="ranking-content-top20-ranking-content">京都大学</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡南洋理工大学</div>
+                                <div class="ranking-content-top20-ranking-content">多伦多大学</div>
+                                <div class="ranking-content-top20-ranking-content">清华大学</div>
+                                <div class="ranking-content-top20-ranking-content">芝加哥大学</div>
+                            </div>
+                            <div style="text-align: center">
+                                <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">Switzerland 瑞士</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Japan 日本</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">Switzerland 瑞士</div>
+                                <div class="ranking-content-top20-ranking-content">China 中国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Japan 日本</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">Canada 加拿大</div>
+                                <div class="ranking-content-top20-ranking-content">China 中国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters ranking-content-top20-ranking tabcontentSubject" id="Social">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ranking-content-top20-ranking-item ranking-content-specialist-ranking-item"
+                            style="margin: 0 auto">
+                            <div style="text-align: left;">
+                                <div class="ranking-content-top20-ranking-title">院校</div>
+                                <div class="ranking-content-top20-ranking-content">哈佛大学</div>
+                                <div class="ranking-content-top20-ranking-content">伦敦经济和政治学院(LSE)</div>
+                                <div class="ranking-content-top20-ranking-content">斯坦福大学</div>
+                                <div class="ranking-content-top20-ranking-content">牛津大学</div>
+                                <div class="ranking-content-top20-ranking-content">麻省理工学院</div>
+                                <div class="ranking-content-top20-ranking-content">剑桥大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学伯克利分校</div>
+                                <div class="ranking-content-top20-ranking-content">耶鲁大学</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡国立大学</div>
+                                <div class="ranking-content-top20-ranking-content">加州大学洛杉矶分校</div>
+                                <div class="ranking-content-top20-ranking-content">宾夕法尼亚大学</div>
+                                <div class="ranking-content-top20-ranking-content">哥伦比亚大学</div>
+                                <div class="ranking-content-top20-ranking-content">芝加哥大学</div>
+                                <div class="ranking-content-top20-ranking-content">普林斯顿大学</div>
+                                <div class="ranking-content-top20-ranking-content">东京大学</div>
+                                <div class="ranking-content-top20-ranking-content">博科尼大学</div>
+                                <div class="ranking-content-top20-ranking-content">纽约大学</div>
+                                <div class="ranking-content-top20-ranking-content">香港大学</div>
+                                <div class="ranking-content-top20-ranking-content">新加坡南洋理工大学</div>
+                                <div class="ranking-content-top20-ranking-content">墨尔本大学</div>
+                            </div>
+                            <div style="text-align: center">
+                                <div class="ranking-content-top20-ranking-title">国家/地区</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United Kingdom 英国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Japan 日本</div>
+                                <div class="ranking-content-top20-ranking-content">Italy 意大利</div>
+                                <div class="ranking-content-top20-ranking-content">United States 美国</div>
+                                <div class="ranking-content-top20-ranking-content">Hong Kong 香港</div>
+                                <div class="ranking-content-top20-ranking-content">Singapore 新加坡</div>
+                                <div class="ranking-content-top20-ranking-content">Australia 澳大利亚</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn" data-wow-duration="3s" style="margin-top: 10px">
+                    <img src="../img/ranking/a-e.png" />
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">A</div>
+                                <div class="ranking-content-specialist-item-content">会计与金融专业Accounting & Finance</div>
+                                <div class="ranking-content-specialist-item-content">农业、林业与食品Agriculture, Forestry and
+                                    Food
+                                </div>
+                                <div class="ranking-content-specialist-item-content">美国研究American Studies</div>
+                                <div class="ranking-content-specialist-item-content">解剖学与生理学Anatomy & Physiology</div>
+                                <div class="ranking-content-specialist-item-content">人类学Anthropology</div>
+                                <div class="ranking-content-specialist-item-content">建筑学Architecture</div>
+                                <div class="ranking-content-specialist-item-content">艺术Art</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">B</div>
+                                <div class="ranking-content-specialist-item-content">生命科学Biosciences</div>
+                                <div class="ranking-content-specialist-item-content">建筑与城乡规划Building & Town & Country
+                                    Planning
+                                </div>
+                                <div class="ranking-content-specialist-item-content">企业管理与市场营销Business & Management &
+                                    Marketing
+                                </div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">C</div>
+                                <div class="ranking-content-specialist-item-content">化学Chemistry</div>
+                                <div class="ranking-content-specialist-item-content">古代史Classic & Anicent History</div>
+                                <div class="ranking-content-specialist-item-content">计算机Computer Science and IS</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">D</div>
+                                <div class="ranking-content-specialist-item-content">牙医Dentistry</div>
+                                <div class="ranking-content-specialist-item-content">设计与工艺Design & Crafts</div>
+                                <div class="ranking-content-specialist-item-content">戏剧与舞蹈Drama & Dance</div>
+                                <div class="ranking-content-specialist-item-content">地球与海洋科学Earth & Marine Science</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">E</div>
+                                <div class="ranking-content-specialist-item-content">经济学Economics</div>
+                                <div class="ranking-content-specialist-item-content">教育学Education</div>
+                                <div class="ranking-content-specialist-item-content">化学工程Engineering - Chemical</div>
+                                <div class="ranking-content-specialist-item-content">土木工程Engineering - Civil</div>
+                                <div class="ranking-content-specialist-item-content">能源与环境工程Engineering - Energy &
+                                    Environmental
+                                </div>
+                                <div class="ranking-content-specialist-item-content">工程专业Engineering - General</div>
+                                <div class="ranking-content-specialist-item-content">材料工程Engineering - Materials &
+                                    Mineral
+                                </div>
+                                <div class="ranking-content-specialist-item-content">机械工程Engineering - Mechanical</div>
+                                <div class="ranking-content-specialist-item-content">英文写作English & Creative Writing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark ranking-content-specialist-btn">
+                        我的专业在哪里？点此免费咨询专业排名
+                    </button>
+                </div>
+                <div class="wow fadeIn" data-wow-duration="3s">
+                    <img src="../img/ranking/f-m.png" />
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">F</div>
+                                <div class="ranking-content-specialist-item-content">时尚服装专业Fashion & Textiles</div>
+                                <div class="ranking-content-specialist-item-content">电影制作与摄影专业Film Production &
+                                    Photography
+                                </div>
+                                <div class="ranking-content-specialist-item-content">法医与考古学Forensic Sci & Archaeology
+                                </div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">G</div>
+                                <div class="ranking-content-specialist-item-content">地理与环境Geograpghy & Environmental
+                                </div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">H</div>
+                                <div class="ranking-content-specialist-item-content">卫生Health Professions</div>
+                                <div class="ranking-content-specialist-item-content">历史History</div>
+                                <div class="ranking-content-specialist-item-content">艺术史History of Art</div>
+                                <div class="ranking-content-specialist-item-content">酒店、活动与旅游Hospitality & Event &
+                                    Tourism
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">J</div>
+                                <div class="ranking-content-specialist-item-content">新闻出版与公关Journalism & Publishing & PR
+                                </div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">L</div>
+                                <div class="ranking-content-specialist-item-content">法学Law</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">M</div>
+                                <div class="ranking-content-specialist-item-content">数学Mathematics</div>
+                                <div class="ranking-content-specialist-item-content">传媒与电影Media & Film</div>
+                                <div class="ranking-content-specialist-item-content">医学Medicine</div>
+                                <div class="ranking-content-specialist-item-content">语言学Modern Language & Linguistics
+                                </div>
+                                <div class="ranking-content-specialist-item-content">音乐Music</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark ranking-content-specialist-btn">
+                        我的专业在哪里？点此免费咨询专业排名
+                    </button>
+                </div>
+                <div class="wow fadeIn" data-wow-duration="3s">
+                    <img src="../img/ranking/n-v.png" />
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">N</div>
+                                <div class="ranking-content-specialist-item-content">护理与助产Nursing & Widwifery</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">P</div>
+                                <div class="ranking-content-specialist-item-content">药学与药理学Pharmacy & Pharmacology</div>
+                                <div class="ranking-content-specialist-item-content">哲学Philosophy</div>
+                                <div class="ranking-content-specialist-item-content">物理学Physics</div>
+                                <div class="ranking-content-specialist-item-content">政治学Politics</div>
+                                <div class="ranking-content-specialist-item-content">心理学Psychology</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">R</div>
+                                <div class="ranking-content-specialist-item-content">宗教与神学Religious</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">S</div>
+                                <div class="ranking-content-specialist-item-content">社会政策与管理Social Policy &
+                                    Administrations
+                                </div>
+                                <div class="ranking-content-specialist-item-content">社会服务工作Social Work</div>
+                                <div class="ranking-content-specialist-item-content">社会学Sociology</div>
+                                <div class="ranking-content-specialist-item-content">体育科学Sports Science</div>
+                            </div>
+                            <div class="ranking-content-specialist-item">
+                                <div class="ranking-content-specialist-item-title">V</div>
+                                <div class="ranking-content-specialist-item-content">兽医Veterinary Science</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark ranking-content-specialist-btn">
+                        我的专业在哪里？点此免费咨询专业排名
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 预约咨询 -->
+        <div class="ranking-advisory-div wow fadeIn" data-wow-duration="3s">
+            <div class="ranking-advisory-title">2019年申请拉开帷幕</div>
+            <div class="ranking-advisory-subtitle">dream school先到先得名额有限，行动宜早不宜迟！</div>
+            <div class="ranking-advisory-linediv"></div>
+            <div class="row ranking-advisory-form-div container">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                    <div class="input-group input-group-sm ranking-advisory-input-group">
+                        <div class="input-group-prepend ranking-advisory-icon">
+                            <img src="../img/ranking/person.png" />
+                            <div>姓名</div>
+                        </div>
+                        <input type="text" class="form-control ranking-advisory-input" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                    <div class="input-group input-group-sm ranking-advisory-input-group">
+                        <div class="input-group-prepend ranking-advisory-icon">
+                            <img src="../img/ranking/mail.png" />
+                            <div>邮箱</div>
+                        </div>
+                        <input type="text" class="form-control ranking-advisory-input" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                    <div class="input-group input-group-sm ranking-advisory-input-group">
+                        <div class="input-group-prepend ranking-advisory-icon">
+                            <img src="../img/ranking/phone.png" />
+                            <div>手机号</div>
+                        </div>
+                        <input type="text" class="form-control ranking-advisory-input" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12">
+                    <button type="button" class="btn ranking-advisory-btn">立即预约</button>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    <div class="ranking-advisory-hotine">
+                        <div class="ranking-advisory-hotine-title">咨询热线：</div>
+                        <div class="ranking-advisory-hotine-number">400 xxx xxx</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="common-footer"></div>
+    </div>
+    <script src="../config/body_import.js"></script>
+    <script>
+        new WOW().init();
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("country");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            console.log('evt', evt)
+            evt.currentTarget.className += " active";
+        }
+
+        function openSubject(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontentSubject");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("countrySubject");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // 触发 id="defaultOpen" click 事件
+        setTimeout(function () {
+            document.getElementById("defaultOpen").click();
+            document.getElementById("openDefaultSubject").click();
+        }, 500);
+    </script>
+</body>
+
+</html>

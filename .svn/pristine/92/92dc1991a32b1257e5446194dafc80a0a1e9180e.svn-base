@@ -1,0 +1,36 @@
+.common-head-main-div {
+  width: 100%;
+  text-align: center;
+}
+.common-head-main-div .common-head-logo {
+  height: 100px;
+  margin: 12px 0 4px 0;
+}
+.common-head-main-div .head-collapse {
+  justify-content: flex-end;
+}
+.common-head-main-div .navbar {
+  padding: 0;
+}
+.common-head-main-div .navbar .nav-item {
+  padding: 6px;
+}
+.common-head-main-div .navbar .nav-item .nav-link {
+  color: #333333 !important;
+  font-weight: bold;
+}
+.common-head-main-div .navbar .nav-item .dropdown-menu .dropdown-item {
+  color: #333333 !important;
+}
+.common-head-main-div .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background: #E9EBEB !important;
+  color: #B91C22 !important;
+}
+.common-head-main-div .navbar .nav-item:hover .nav-link {
+  color: #B91C22 !important;
+  font-weight: bold;
+}
+.common-head-main-div .navbar .active .nav-link {
+  color: #B91C22 !important;
+  font-weight: bold;
+}

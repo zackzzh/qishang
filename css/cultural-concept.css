@@ -1,0 +1,24 @@
+.page-cultural {
+  background: linear-gradient(-4deg, #939595, #e9ebeb, #ffffff);
+  padding-bottom: 120px;
+}
+.page-cultural .banner img {
+  width: 100%;
+}
+.page-cultural .cultural-content {
+  margin: 80px 0px;
+  font-size: 28px;
+  color: #000;
+}
+.page-cultural .cultural-item {
+  margin-bottom: 150px;
+}
+.page-cultural .cultural-item p {
+  margin-bottom: 40px;
+}
+.page-cultural .cultural-item img {
+  width: 100%;
+}
+.page-cultural .item-two {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,51 @@
+.common-head-main-div {
+  width: 100%;
+  text-align: center;
+}
+.common-head-main-div .navbar-brand {
+  display: flex;
+  align-items: flex-end;
+}
+.common-head-main-div .navbar-brand .common-head-logo {
+  height: 94px;
+  margin: 12px 0 4px 0;
+}
+.common-head-main-div .navbar-brand .common-head-phone {
+  display: inline-block;
+  text-align: left;
+  margin-left: 6px;
+  padding-left: 6px;
+  border-left: 1px solid #B91C22;
+  color: #B91C22;
+}
+.common-head-main-div .navbar-brand .common-head-phone .common-head-phone-title {
+  font-size: 14px;
+}
+.common-head-main-div .head-collapse {
+  justify-content: flex-end;
+}
+.common-head-main-div .navbar {
+  padding: 0;
+}
+.common-head-main-div .navbar .nav-item {
+  padding: 6px 2px;
+}
+.common-head-main-div .navbar .nav-item .nav-link {
+  color: #333333 !important;
+  font-weight: bold;
+}
+.common-head-main-div .navbar .nav-item .dropdown-menu .dropdown-item {
+  color: #333333 !important;
+}
+.common-head-main-div .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background: #E9EBEB !important;
+  color: #B91C22 !important;
+}
+.common-head-main-div .navbar .nav-item:hover .nav-link {
+  color: #B91C22 !important;
+  font-weight: bold;
+}
+.common-head-main-div .navbar .active .nav-link {
+  color: #B91C22 !important;
+  font-weight: bold;
+}
